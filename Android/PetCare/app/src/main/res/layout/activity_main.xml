@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawerLayoutMain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/cBackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/navigation_bar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+        <Button
+            android:id="@+id/button_editInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_edit"
+            android:textSize="12sp"
+
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@id/navToolbar"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/petChart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            android:background="@color/cBackgroundPetChart"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button_editInformation">
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/lab_name"
+                 android:textSize="15sp"
+
+                 android:layout_marginLeft="10dp"
+
+                 app:layout_constraintStart_toStartOf="parent"
+                 app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintBottom_toTopOf="@id/char_petName"/>
+             <TextView
+                 android:id="@+id/char_petName"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Gato"
+                 android:textColor="@color/registerTitle"
+                 android:textSize="20sp"
+
+                 app:layout_constraintEnd_toStartOf="@id/img_photo"
+                 app:layout_constraintStart_toStartOf="parent"
+                 app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/img_photo"
+                android:layout_width="250dp"
+                android:layout_height="0dp"
+                android:src="@drawable/picture"
+
+                app:layout_constraintStart_toEndOf="@id/char_petName"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/lab_petInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lab_petinformation"
+            android:textSize="20sp"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/petChart"
+            />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/infoChart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/cBackgroundInfo"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+
+            app:layout_constraintTop_toBottomOf="@id/lab_petInformation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guide_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                app:layout_constraintGuide_percent="0.5" />
+
+            <TextView
+                android:id="@+id/lab_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lab_age"
+                style="@android:style/TextAppearance.Medium"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/lab_weight"/>
+
+            <TextView
+                android:id="@+id/info_petAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+
+                style="@android:style/TextAppearance.Medium"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+
+                app:layout_constraintStart_toEndOf="@id/guide_info"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/info_petWeight"/>
+
+            <TextView
+                android:id="@+id/lab_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lab_weight"
+                style="@android:style/TextAppearance.Medium"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lab_age"
+                app:layout_constraintBottom_toTopOf="@id/lab_allergies"/>
+
+            <TextView
+                android:id="@+id/info_petWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11 lb."
+
+                style="@android:style/TextAppearance.Medium"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+
+                app:layout_constraintStart_toEndOf="@id/guide_info"
+                app:layout_constraintTop_toBottomOf="@id/info_petAge"
+                app:layout_constraintBottom_toTopOf="@id/info_petAllergies"/>
+
+            <TextView
+                android:id="@+id/lab_allergies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lab_allergies"
+                style="@android:style/TextAppearance.Medium"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lab_weight"
+                app:layout_constraintBottom_toTopOf="@id/lab_vaccines"/>
+
+            <TextView
+                android:id="@+id/info_petAllergies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ninguna"
+
+                style="@android:style/TextAppearance.Medium"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+
+                app:layout_constraintStart_toEndOf="@id/guide_info"
+                app:layout_constraintTop_toBottomOf="@id/info_petWeight"
+                app:layout_constraintBottom_toTopOf="@id/info_petVaccines"/>
+
+            <TextView
+                android:id="@+id/lab_vaccines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lab_vaccines"
+                style="@android:style/TextAppearance.Medium"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lab_allergies"
+                app:layout_constraintBottom_toTopOf="@id/lab_conditions"/>
+
+            <TextView
+                android:id="@+id/info_petVaccines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="La vacuna"
+
+                style="@android:style/TextAppearance.Medium"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+
+                app:layout_constraintStart_toEndOf="@id/guide_info"
+                app:layout_constraintTop_toBottomOf="@id/info_petAllergies"
+                app:layout_constraintBottom_toTopOf="@id/info_petConditions"/>
+
+            <TextView
+                android:id="@+id/lab_conditions"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/lab_conditions"
+                style="@android:style/TextAppearance.Medium"
+                android:autoSizeTextType="uniform"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lab_vaccines"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/info_petConditions"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Ojo perezoso"
+
+                style="@android:style/TextAppearance.Medium"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+
+                app:layout_constraintStart_toEndOf="@id/guide_info"
+                app:layout_constraintTop_toBottomOf="@id/info_petVaccines"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/navigation_menu"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"/>
+
+</android.support.v4.widget.DrawerLayout>

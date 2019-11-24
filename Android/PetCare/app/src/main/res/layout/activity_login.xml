@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+
+    android:background="@drawable/background_login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/edit_login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/log_username"
+            android:background="@color/backgroundEdit"
+
+            android:layout_margin="10dp"
+            android:padding="10dp"
+
+            android:gravity="center_horizontal"
+
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/edit_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundEdit"
+
+            android:layout_margin="10dp"
+            android:padding="10dp"
+
+            android:gravity="center_horizontal"
+            android:hint="@string/log_password"
+
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/button_login_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/positiveButton"
+
+            android:layout_margin="10dp"
+            android:padding="10dp"
+
+            android:background="@color/positiveButton"/>
+
+        <Button
+            android:id="@+id/button_login_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/registerButton"
+
+            android:layout_margin="10dp"
+            android:padding="10dp"
+
+            android:background="@color/registerButton"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

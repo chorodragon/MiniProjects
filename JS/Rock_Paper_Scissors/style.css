@@ -1,0 +1,58 @@
+body {
+  background-color: #c7d7e1;
+  font-size: 16px;
+}
+
+.container {
+  text-align: center;
+  padding: 50px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.instructions {
+  color: #c17379;
+  font-size: 1em;
+}
+
+.turn {
+  display: block;
+  margin: 10px;
+  font-size: 1.5em;
+  color: #883d60;
+}
+
+.punctuation {
+  font-size: 2em;
+}
+
+.playerScore {
+  color: #971d38;
+}
+
+.botScore {
+  color: #de9983;
+}
+
+.result {
+  display: none;
+  font-size: 3em;
+  color: #530bf2;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  border-radius: 25px;
+  background-color: #bf93b6;
+  padding: 10px 25px;
+  border: 1px solid black;
+  margin: 30px 50px;
+  color: #49284c;
+}
+
+.restartB {
+  display: none;
+}

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="fetchingText">Fetching Location</string>
+    <string name="NAText">NA</string>
+    <string name="changeCityText">Change City</string>
+    <string name="enterCityText">Enter city name</string>
+</resources>

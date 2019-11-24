@@ -1,0 +1,117 @@
+body, html {
+    margin: 0;
+}
+
+#header {
+    height: 32px;
+    widht: 100%;
+    margin: 10px;
+}
+
+#center {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.avatarImg {
+    border-radius: 100px;
+    width: 32px;
+    height: 32px;
+    float: right;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.notificationIcon {
+    border-radius: 100px;
+    width: 32px; height: 32px;
+    float: right;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.notificationCenterIcon {
+    width: 32px; height: 32px;
+    float: right;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.imagesLink, .gmailLink {
+    float: right;
+    display: inline-block;
+    margin: 5px 15px 0 0;
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+    line-height: 24px;
+    font-size: small;
+}
+
+#footer {
+    background-color: #f2f2f2;
+    width: 100%; height: 80px;
+    margin: 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+.t_footer, .b_footer {
+    border-bottom: solid 1px #e4e4e4;
+    color: rgba(0,0,0,.54);
+    line-height: 40px;
+}
+
+.t_footer {
+    border-top: solid 1px #e4e4e4;
+}
+
+.location {
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+
+.b_footer a {
+    text-decoration: none;
+    color: rgba(0,0,0,.54);
+    font-size: small;
+}
+
+.bottomLinksRight {
+    float: right;
+    margin: 0 15px 0 10px;
+}
+
+.bottomLinksLeft {
+    float: left;
+    margin: 0 10px 0 15px;
+}
+
+.searchBox {
+    border: solid 0.5px #e4e4e4;
+    box-shadow: 0 1px 0 0 #e4e4e4;
+    line-height: 25px;
+}
+
+.searchButtons {
+    display: inline-block;
+    background-color: #e4e4e4;
+    border: none;
+    padding: 10px 15px;
+}
+
+.separator {
+    width: 100%; height: 35px; 
+}
+
+.searchBoxLabel a {
+    text-decoration: none;
+}
+
+.searchBoxLabel {
+    display: block;
+    font-size: small;
+}

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Simulador de Dados</string>
+    <string name="rollButton_s">Roll Button</string>
+</resources>

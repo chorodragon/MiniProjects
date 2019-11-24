@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="cMenuBar">#263238</color>
+    <color name="cBackground">#e0e0e0</color>
+    <color name="cBackgroundPetChart">#bdbdbd</color>
+    <color name="cBackgroundInfo">#fafafa</color>
+    <color name="backgroundEdit">#33263238</color>
+    <color name="positiveButton">#C5E1A5</color>
+    <color name="negativeButton">#EF9A9A</color>
+    <color name="registerButton">#80DEEA</color>
+    <color name="registerTitle">#212121</color>
+</resources>

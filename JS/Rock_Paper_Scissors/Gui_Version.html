@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <span class="instructions">Select an option </span>
+      <span class="turn"></span>
+      <div class="punctuation">
+        <div class="playerScore">
+          <span class="player">Player:</span>
+          <span class="score">0</span>
+        </div>
+        <div class="botScore">
+          <span class="player">Bot:</span>
+          <span class="score">0</span>
+        </div>
+      </div>
+      <div class="button rockB">Rock</div>
+      <div class="button paperB">Paper</div>
+      <div class="button scissorsB">Scissors</div>
+      <span class="result"></span>
+      <div class="button restartB">Restart</div>
+    </div>
+    <script>
+      /*
+      function computerPlay(){
+        let n_number = Math.random() * (posibilities.length - 1)
+        n_number = Math.round(n_number)
+        return posibilities[n_number]
+      }
+
+function playRound(playerSelection, computerSelection){
+  let posibilities = ['rock', 'paper', 'scissors']
+  playerSelection = posibilities.indexOf(playerSelection)
+  computerSelection = posibilities.indexOf(computerSelection)
+  let resultDiff = Math.abs(playerSelection - computerSelection)
+  let result = ""
+  switch(resultDiff){
+    case 0:
+      result = "Draw!"
+      break
+
+    case 1:
+      if (playerSelection > computerSelection){
+        result = "You win! " + posibilities[playerSelection] + " beats " + posibilities[computerSelection]
+      }
+      else {
+        result = "You lose! " + posibilities[computerSelection] + " beats " + posibilities[playerSelection]
+      }
+      break
+
+    case 2:
+      if (playerSelection == 0){
+        result = "You win! " + posibilities[playerSelection] + " beats " + posibilities[computerSelection]
+      }
+      else {
+        result = "You lose! " + posibilities[computerSelection] + " beats " + posibilities[playerSelection]
+      }
+      break
+
+    default:
+      result = "I don't know"
+
+  }
+  return result
+}
+
+function game(){
+  let round = 0
+  let playerScore = 0
+  let computerScore = 0
+  let roundResult = ""
+  for (round = 0; round < 5; round++){
+    let playerSelection = prompt("Enter your selection: ").toLowerCase()
+    let computerSelection = computerPlay()
+    roundResult = playRound(playerSelection, computerSelection)
+    console.log(roundResult)
+    roundResult = roundResult.split("!")[0]
+    if (roundResult == "You win"){
+      playerScore++
+    }
+    else if (roundResult == "You lose"){
+      computerScore++
+    }
+  }
+  console.log("Player score: " + playerScore)
+  console.log("Computer score: " + computerScore)
+}
+
+game()
+*/
+
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html> 

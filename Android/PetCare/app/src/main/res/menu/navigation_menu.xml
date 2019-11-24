@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_homepage"
+        android:title="@string/nav_homepage"
+        android:icon="@drawable/ic_action_home"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/nav_calendar"
+        android:title="@string/nav_calendar"
+        android:icon="@drawable/ic_action_calendar"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/nav_reminders"
+        android:title="@string/nav_reminders"
+        android:icon="@drawable/ic_action_reminders"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/nav_tips"
+        android:title="@string/nav_tips"
+        android:icon="@drawable/ic_action_tips"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/nav_help"
+        android:title="@string/nav_help"
+        android:icon="@drawable/ic_action_help"
+        app:showAsAction="ifRoom"/>
+</menu>

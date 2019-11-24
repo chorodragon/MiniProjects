@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+
+    android:background="@drawable/background_register">
+
+    <TextView
+        android:id="@+id/registerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/reg_title"
+        android:textSize="35sp"
+        android:textColor="@color/registerTitle"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/registerFields"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    
+    <LinearLayout
+        android:id="@+id/registerFields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_constraintTop_toBottomOf="@id/registerTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/edit_register_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/backgroundEdit"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+
+            android:hint="@string/reg_email"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/edit_register_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/backgroundEdit"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+
+            android:hint="@string/reg_password"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/edit_register_passwordRepeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/backgroundEdit"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+
+            android:hint="@string/reg_password_repeat"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/button_register_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/positiveButton"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+
+            android:text="@string/positiveButton"/>
+
+        <Button
+            android:id="@+id/button_register_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/negativeButton"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+
+            android:text="@string/negativeButton"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

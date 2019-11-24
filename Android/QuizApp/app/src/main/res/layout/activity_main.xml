@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/backgroundColor"
+    android:gravity="center">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:max="100"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/initialScore"
+        android:textSize="20sp"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"
+        android:id="@+id/score"
+        android:layout_above="@id/progressBar"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Question"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/questionColor"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_above="@id/score">
+
+        <Button
+            android:id="@+id/trueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trueButton"
+            android:layout_weight="1"
+            style="@style/answerButton"
+            android:background="@color/buttonTrueBackground"/>
+
+        <Button
+            android:id="@+id/falseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/falseButton"
+            android:layout_weight="1"
+            style="@style/answerButton"
+            android:background="@color/buttonFalseBackground"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

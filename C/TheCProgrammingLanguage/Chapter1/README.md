@@ -1,0 +1,1 @@
+Todos los programas en este capitulo fueron realizados utilizando el editor de texto Vim 7.4 y compilados utilizando la herramienta 4.9.2. El sistema operativo utilizado fue Debian 8.3 jessie con kernel x86_64 Linux 3.16.0-4-amd64.

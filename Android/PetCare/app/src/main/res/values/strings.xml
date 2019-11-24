@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Pet Care</string>
+    <string name="nav_homepage">Inicio</string>
+    <string name="nav_calendar">Calendario</string>
+    <string name="nav_reminders">Recordatorios</string>
+    <string name="nav_help">Ayuda</string>
+    <string name="nav_tips">Consejos</string>
+    <string name="nav_about">Acerca de</string>
+    <string name="nav_settings">Ajustes</string>
+    <string name="nav_selection">Cambiar Mascota</string>
+    <string name="openNav">Open</string>
+    <string name="closeNav">Close</string>
+    <string name="lab_name">Nombre</string>
+    <string name="button_edit">Editar Informacion</string>
+    <string name="lab_petinformation">Informacion de la mascota</string>
+    <string name="lab_age">Edad</string>
+    <string name="lab_weight">Peso</string>
+    <string name="lab_allergies">Alergias</string>
+    <string name="lab_vaccines">Vacunas</string>
+    <string name="lab_conditions">Condiciones Especiales</string>
+    <string name="log_username">Email</string>
+    <string name="log_password">Contrasena</string>
+    <string name="positiveButton">Aceptar</string>
+    <string name="negativeButton">Cancelar</string>
+    <string name="registerButton">Registrar</string>
+    <string name="reg_username">Usuario</string>
+    <string name="reg_email">Email</string>
+    <string name="reg_password">Contrasena</string>
+    <string name="reg_password_repeat">Repetir Contrasena</string>
+    <string name="reg_title">Nuevo Usuario</string>
+    <string name="aboutText">Foto de fondo de registro: Photo by Roberto Nickson (@g) on Unsplash Foto de Inicio de Sesion: Photo by Alexis Chloe on Unsplash Database: https://firebase.google.com/</string>
+    <string name="error_invalid_password">Contrasena Invalida</string>
+    <string name="error_field_required">Campo requerido</string>
+    <string name="error_invalid_email">Email Invalido</string>
+</resources>
